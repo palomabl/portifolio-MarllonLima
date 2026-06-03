@@ -5,7 +5,7 @@ function ProfileAvatar() {
 
   return (
     <div
-      className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden ring-2 ring-[#c8b89e]/30 shadow-2xl flex-shrink-0 flex items-center justify-center"
+      className="w-44 h-44 md:w-56 md:h-56 rounded-full overflow-hidden ring-2 ring-[#c8b89e]/30 shadow-2xl flex-shrink-0 flex items-center justify-center"
       style={{ backgroundColor: '#3d2e22' }}
     >
       {imgError ? (
@@ -20,7 +20,7 @@ function ProfileAvatar() {
         </svg>
       ) : (
         <img
-          src="/profile.jpg"
+          src="src\assets\profile.PNG"
           alt="Marllom Lima"
           className="w-full h-full object-cover"
           onError={() => setImgError(true)}
@@ -33,7 +33,7 @@ function ProfileAvatar() {
 export default function Hero() {
   return (
     <section
-      className="min-h-screen flex flex-col items-center justify-center px-6 py-20"
+      className="min-h-[70vh] flex flex-col items-center justify-center px-6 py-20"
       style={{ backgroundColor: '#2b2118' }}
     >
       <div className="flex flex-col items-center text-center max-w-xl w-full gap-8">
