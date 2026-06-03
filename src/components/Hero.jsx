@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Ferrofluid from './Ferrofluid'
 
 function ProfileAvatar() {
   const [imgError, setImgError] = useState(false)
@@ -20,7 +21,7 @@ function ProfileAvatar() {
         </svg>
       ) : (
         <img
-          src="src\assets\profile.PNG"
+          src="src/assets/profile.PNG"
           alt="Marllom Lima"
           className="w-full h-full object-cover"
           onError={() => setImgError(true)}
@@ -33,10 +34,31 @@ function ProfileAvatar() {
 export default function Hero() {
   return (
     <section
-      className="min-h-[70vh] flex flex-col items-center justify-center px-6 py-20"
+      className="relative min-h-[70vh] flex flex-col items-center justify-center px-6 py-20 overflow-hidden"
       style={{ backgroundColor: '#2b2118' }}
     >
-      <div className="flex flex-col items-center text-center max-w-xl w-full gap-8">
+      <div className="absolute inset-0 pointer-events-none">
+        <Ferrofluid
+          colors={['#a45c40', '#a45c40', '#a45c40']}
+          speed={0.2}
+          scale={1.9}
+          turbulence={0.8}
+          fluidity={0.12}
+          rimWidth={0.22}
+          sharpness={1.9}
+          shimmer={1.2}
+          glow={2.2}
+          flowDirection="down"
+          opacity={0.25}
+          mouseInteraction={true}
+          mouseStrength={0.8}
+          mouseRadius={0.3}
+          mouseDampening={0.2}
+          mixBlendMode="screen"
+        />
+      </div>
+
+      <div className="relative z-10 flex flex-col items-center text-center max-w-xl w-full gap-8">
         <ProfileAvatar />
 
         <div className="flex flex-col gap-4">
