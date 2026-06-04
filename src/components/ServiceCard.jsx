@@ -1,6 +1,6 @@
 import TiltedCard from './TiltedCard'
 
-const BG_SRC = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%232f4057'/></svg>"
+const BG_SRC = "src/assets/card-1.jpg"
 
 export default function ServiceCard({ title }) {
   return (
@@ -19,7 +19,7 @@ export default function ServiceCard({ title }) {
         displayOverlayContent={true}
         overlayContent={
           <div
-            className="flex items-center px-6 md:px-8 h-full w-full font-inter font-medium text-lg md:text-2xl tracking-wide cursor-pointer"
+            className="flex items-center px-6 py-4 md:px-8 h-full w-full font-inter font-medium text-lg md:text-2xl tracking-wide cursor-pointer"
             style={{ color: '#b99663' }}
           >
             {title}
