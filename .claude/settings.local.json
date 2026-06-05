@@ -3,7 +3,10 @@
     "allow": [
       "Bash(npm create *)",
       "Bash(npm install *)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(npx playwright *)",
+      "Bash(npm list *)",
+      "Bash(npx --yes playwright@1.60.0 --version)"
     ]
   }
 }

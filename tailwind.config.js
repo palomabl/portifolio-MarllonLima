@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         sora: ['Sora', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
+        cormorant: ['Cormorant Garamond', 'serif'],
       },
       colors: {
         brand: {
