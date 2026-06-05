@@ -25,7 +25,7 @@ export default function ServicePage() {
 
   return (
     <div style={{ backgroundColor: '#2b2118' }}>
-      <ServiceHeader />
+      <ServiceHeader serviceTitle={service.title} />
 
       <main>
         <ServiceHero
@@ -46,7 +46,7 @@ export default function ServicePage() {
 
         <Testimonials items={service.testimonials} />
 
-        <CallToAction />
+        <CallToAction serviceTitle={service.title} />
       </main>
 
       <footer
@@ -60,7 +60,7 @@ export default function ServicePage() {
           className="font-inter text-[11px] tracking-[0.2em] uppercase"
           style={{ color: '#c8b89e', opacity: 0.32 }}
         >
-          © {new Date().getFullYear()} Marllom Lima
+          © {new Date().getFullYear()} Marllon Lima
         </span>
         <Link
           to="/"

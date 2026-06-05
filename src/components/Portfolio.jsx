@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'motion/react'
-
-const BG = 'src/assets/card-1.jpg'
+import cardImg from '../assets/card-1.jpg'
 
 
 function WorkCard({ num, title, category, year, tint, index, aspectClass }) {
@@ -20,7 +19,7 @@ function WorkCard({ num, title, category, year, tint, index, aspectClass }) {
       onMouseLeave={() => setHovered(false)}
     >
       <img
-        src={BG}
+        src={cardImg}
         alt={title}
         className="absolute inset-0 w-full h-full object-cover"
         style={{

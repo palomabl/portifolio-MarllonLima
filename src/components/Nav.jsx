@@ -37,7 +37,7 @@ export default function Nav() {
             className="font-sora font-semibold text-[13px] tracking-[0.2em] uppercase"
             style={{ color: '#c8b89e' }}
           >
-            Marllom Lima
+            Marllon Lima
           </a>
 
           <nav className="hidden md:flex items-center gap-10">

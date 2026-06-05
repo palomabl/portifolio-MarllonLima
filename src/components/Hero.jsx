@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Ferrofluid from './Ferrofluid'
+import profileImg from '../assets/profile.PNG'
 
 function ProfileAvatar() {
   const [imgError, setImgError] = useState(false)
@@ -21,8 +22,8 @@ function ProfileAvatar() {
         </svg>
       ) : (
         <img
-          src="src/assets/profile.PNG"
-          alt="Marllom Lima"
+          src={profileImg}
+          alt="Marllon Lima"
           className="w-full h-full object-cover"
           onError={() => setImgError(true)}
         />
@@ -66,7 +67,7 @@ export default function Hero() {
             className="font-sora font-bold text-5xl md:text-6xl lg:text-7xl leading-tight tracking-tight"
             style={{ color: '#c8b89e' }}
           >
-            Marllom Lima
+            Marllon Lima
           </h1>
 
           <p

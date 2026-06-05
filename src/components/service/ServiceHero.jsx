@@ -1,3 +1,5 @@
+import { buildWhatsAppUrl } from '../../utils/whatsapp'
+
 export default function ServiceHero({ title, tagline, description }) {
   return (
     <section
@@ -50,7 +52,9 @@ export default function ServiceHero({ title, tagline, description }) {
         </p>
 
         <a
-          href="#cta"
+          href={buildWhatsAppUrl(title)}
+          target="_blank"
+          rel="noopener noreferrer"
           className="self-start font-inter text-[11px] tracking-[0.22em] uppercase px-8 py-4 mt-2 transition-all duration-300 hover:opacity-90"
           style={{ backgroundColor: '#a45c40', color: '#f4efe7' }}
         >

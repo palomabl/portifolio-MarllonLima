@@ -1,4 +1,6 @@
-export default function CallToAction() {
+import { buildWhatsAppUrl } from '../../utils/whatsapp'
+
+export default function CallToAction({ serviceTitle }) {
   return (
     <section
       id="cta"
@@ -23,7 +25,7 @@ export default function CallToAction() {
         </div>
 
         <a
-          href="https://wa.me/55"
+          href={buildWhatsAppUrl(serviceTitle)}
           target="_blank"
           rel="noopener noreferrer"
           className="font-inter text-[11px] tracking-[0.24em] uppercase px-10 py-4 transition-all duration-300 hover:opacity-90"

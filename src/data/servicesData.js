@@ -36,7 +36,7 @@ export const servicesData = {
     ],
     testimonials: [
       {
-        text: 'Desde que contratei o Marllom para cuidar do meu conteúdo mensal, minha presença nas redes cresceu de forma consistente. Profissionalismo e criatividade em cada entrega.',
+        text: 'Desde que contratei o Marllon para cuidar do meu conteúdo mensal, minha presença nas redes cresceu de forma consistente. Profissionalismo e criatividade em cada entrega.',
         name: 'Ana Paula',
         project: 'Pacote Mensal — Marca de moda',
       },
@@ -79,7 +79,7 @@ export const servicesData = {
     ],
     testimonials: [
       {
-        text: 'O Marllom capturou cada detalhe do nosso casamento de um jeito que a gente nem percebeu a câmera. O resultado foi simplesmente lindo.',
+        text: 'O Marllon capturou cada detalhe do nosso casamento de um jeito que a gente nem percebeu a câmera. O resultado foi simplesmente lindo.',
         name: 'Camila & Pedro',
         project: 'Cobertura de casamento',
       },
@@ -122,7 +122,7 @@ export const servicesData = {
     ],
     testimonials: [
       {
-        text: 'O vídeo que o Marllom produziu para o lançamento do nosso produto gerou mais engajamento do que qualquer post que já fizemos. Resultado incrível.',
+        text: 'O vídeo que o Marllon produziu para o lançamento do nosso produto gerou mais engajamento do que qualquer post que já fizemos. Resultado incrível.',
         name: 'Lucas Ferreira',
         project: 'Vídeo de lançamento de produto',
       },
