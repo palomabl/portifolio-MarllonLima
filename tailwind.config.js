@@ -13,10 +13,14 @@ export default {
       },
       colors: {
         brand: {
-          dark: '#2b2118',
-          cream: '#c8b89e',
-          blue: '#2f4057',
-          gold: '#b99663',
+          hero: '#1C130F',
+          section: '#241A14',
+          card: '#2B2118',
+          hover: '#3A2A22',
+          text: '#EFE6D8',
+          secondary: '#C8B89E',
+          gold: '#B99663',
+          accent: '#7A3F2E',
         },
       },
     },

@@ -10,19 +10,19 @@ export default function AboutService({ forWho, problem, result }) {
   return (
     <section
       className="px-6 md:px-12 lg:px-20 py-24 md:py-32"
-      style={{ backgroundColor: '#f4f1ea' }}
+      style={{ backgroundColor: '#241A14' }}
     >
       <div className="max-w-6xl mx-auto flex flex-col gap-16 md:gap-20">
         <div className="flex flex-col gap-3">
           <span
             className="font-inter text-[11px] tracking-[0.34em] uppercase"
-            style={{ color: '#2b2118', opacity: 0.5 }}
+            style={{ color: '#C8B89E', opacity: 0.5 }}
           >
             Sobre o serviço
           </span>
           <h2
             className="font-sora font-bold text-3xl md:text-4xl lg:text-5xl"
-            style={{ color: '#2b2118' }}
+            style={{ color: '#EFE6D8' }}
           >
             O que você precisa saber
           </h2>
@@ -34,21 +34,21 @@ export default function AboutService({ forWho, problem, result }) {
               <div className="flex items-center gap-4">
                 <span
                   className="font-inter text-[11px] tracking-[0.28em]"
-                  style={{ color: '#a45c40' }}
+                  style={{ color: '#B99663' }}
                 >
                   {num}
                 </span>
-                <div className="flex-1 h-px" style={{ backgroundColor: '#2b2118', opacity: 0.15 }} />
+                <div className="flex-1 h-px" style={{ backgroundColor: '#EFE6D8', opacity: 0.08 }} />
               </div>
               <h3
                 className="font-sora font-semibold text-base"
-                style={{ color: '#2b2118' }}
+                style={{ color: '#EFE6D8' }}
               >
                 {heading}
               </h3>
               <p
                 className="font-inter text-sm leading-loose"
-                style={{ color: '#2b2118', opacity: 0.68 }}
+                style={{ color: '#C8B89E', opacity: 0.7 }}
               >
                 {contents[i]}
               </p>

@@ -23,11 +23,11 @@ export default function Nav() {
       <header
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
         style={{
-          backgroundColor: scrolled ? 'rgba(26, 20, 15, 0.9)' : 'transparent',
+          backgroundColor: scrolled ? 'rgba(28, 19, 15, 0.92)' : 'transparent',
           backdropFilter: scrolled ? 'blur(18px)' : 'none',
           WebkitBackdropFilter: scrolled ? 'blur(18px)' : 'none',
           borderBottom: scrolled
-            ? '1px solid rgba(200, 184, 158, 0.1)'
+            ? '1px solid rgba(185, 150, 99, 0.12)'
             : '1px solid transparent',
         }}
       >
@@ -35,7 +35,7 @@ export default function Nav() {
           <a
             href="#"
             className="font-sora font-semibold text-[13px] tracking-[0.2em] uppercase"
-            style={{ color: '#c8b89e' }}
+            style={{ color: '#C8B89E' }}
           >
             Marllon Lima
           </a>
@@ -46,15 +46,15 @@ export default function Nav() {
                 key={link.href}
                 href={link.href}
                 className="font-sora text-[11px] tracking-[0.24em] uppercase transition-all duration-200 hover:opacity-100"
-                style={{ color: '#c8b89e', opacity: 0.52 }}
+                style={{ color: '#C8B89E', opacity: 0.5 }}
               >
                 {link.label}
               </a>
             ))}
             <a
               href="#contato"
-              className="font-sora text-[11px] tracking-[0.2em] uppercase px-5 py-2.5 border transition-all duration-300 hover:bg-[#c8b89e] hover:text-[#2b2118] hover:border-[#c8b89e]"
-              style={{ borderColor: 'rgba(200, 184, 158, 0.4)', color: '#c8b89e' }}
+              className="font-sora text-[11px] tracking-[0.2em] uppercase px-5 py-2.5 border transition-all duration-300 hover:bg-brand-gold hover:text-brand-hero hover:border-brand-gold"
+              style={{ borderColor: 'rgba(185, 150, 99, 0.38)', color: '#C8B89E' }}
             >
               Orçamento
             </a>
@@ -69,19 +69,19 @@ export default function Nav() {
               animate={{ rotate: open ? 45 : 0, y: open ? 6.5 : 0 }}
               transition={{ duration: 0.22 }}
               className="block w-[22px] h-[1.5px]"
-              style={{ backgroundColor: '#c8b89e' }}
+              style={{ backgroundColor: '#C8B89E' }}
             />
             <motion.span
               animate={{ opacity: open ? 0 : 1, scaleX: open ? 0 : 1 }}
               transition={{ duration: 0.18 }}
               className="block w-[15px] h-[1.5px]"
-              style={{ backgroundColor: '#c8b89e' }}
+              style={{ backgroundColor: '#C8B89E' }}
             />
             <motion.span
               animate={{ rotate: open ? -45 : 0, y: open ? -6.5 : 0 }}
               transition={{ duration: 0.22 }}
               className="block w-[22px] h-[1.5px]"
-              style={{ backgroundColor: '#c8b89e' }}
+              style={{ backgroundColor: '#C8B89E' }}
             />
           </button>
         </div>
@@ -96,10 +96,10 @@ export default function Nav() {
             transition={{ duration: 0.22 }}
             className="fixed top-[65px] left-0 right-0 z-40 flex flex-col px-6 py-8 gap-6"
             style={{
-              backgroundColor: 'rgba(26, 20, 15, 0.97)',
+              backgroundColor: 'rgba(28, 19, 15, 0.97)',
               backdropFilter: 'blur(20px)',
               WebkitBackdropFilter: 'blur(20px)',
-              borderBottom: '1px solid rgba(200, 184, 158, 0.1)',
+              borderBottom: '1px solid rgba(185, 150, 99, 0.1)',
             }}
           >
             {NAV_LINKS.map((link, i) => (
@@ -110,7 +110,7 @@ export default function Nav() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.055 }}
                 className="font-sora text-sm tracking-[0.22em] uppercase"
-                style={{ color: '#c8b89e', opacity: 0.82 }}
+                style={{ color: '#C8B89E', opacity: 0.82 }}
                 onClick={() => setOpen(false)}
               >
                 {link.label}

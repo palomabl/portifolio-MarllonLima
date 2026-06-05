@@ -52,8 +52,8 @@ export default function ServicePage() {
       <footer
         className="px-6 md:px-12 py-5 flex flex-col sm:flex-row items-center justify-between gap-3"
         style={{
-          backgroundColor: '#1a140f',
-          borderTop: '1px solid rgba(200, 184, 158, 0.07)',
+          backgroundColor: '#1C130F',
+          borderTop: '1px solid rgba(185, 150, 99, 0.08)',
         }}
       >
         <span

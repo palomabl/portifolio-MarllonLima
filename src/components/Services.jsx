@@ -14,13 +14,13 @@ export default function Services() {
     <section
       id="servicos"
       className="px-6 py-20 md:py-28"
-      style={{ backgroundColor: '#c8b89e' }}
+      style={{ backgroundColor: '#241A14' }}
     >
       <div className="max-w-2xl md:max-w-6xl mx-auto flex flex-col gap-10">
         <SplitText
           text="Encontre o serviço ideal para você"
           tag="h2"
-          className="font-sora font-bold text-4xl md:text-5xl lg:text-6xl leading-tight text-brand-dark"
+          className="font-sora font-bold text-4xl md:text-5xl lg:text-6xl leading-tight text-[#efe6d8]"
           delay={40}
           duration={0.8}
           ease="power3.out"

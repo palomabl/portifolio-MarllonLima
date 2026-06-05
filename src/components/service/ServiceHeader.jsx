@@ -6,8 +6,8 @@ export default function ServiceHeader({ serviceTitle }) {
     <header
       className="fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-4 flex items-center justify-between"
       style={{
-        backgroundColor: '#2b2118',
-        borderBottom: '1px solid rgba(200, 184, 158, 0.1)',
+        backgroundColor: '#1C130F',
+        borderBottom: '1px solid rgba(185, 150, 99, 0.1)',
       }}
     >
       <Link

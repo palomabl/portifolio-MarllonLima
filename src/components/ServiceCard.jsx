@@ -18,16 +18,15 @@ export default function ServiceCard({ title }) {
 
   return (
     <div
-      className="flex flex-col justify-between p-7 md:p-8 gap-8 w-full min-h-[220px] md:min-h-[300px] transition-all duration-300 hover:-translate-y-1"
+      className="flex flex-col justify-between p-7 md:p-8 gap-8 w-full min-h-[220px] md:min-h-[300px] bg-brand-card hover:bg-brand-hover transition-colors duration-300 cursor-pointer"
       style={{
-        backgroundColor: '#F4F1EA',
-        border: '1px solid rgba(43, 33, 24, 0.08)',
-        boxShadow: '0 4px 24px rgba(43, 33, 24, 0.06)',
+        border: '1px solid rgba(185, 150, 99, 0.15)',
+        boxShadow: '0 4px 24px rgba(0, 0, 0, 0.25)',
       }}
     >
       <span
         className="font-sora text-[11px] tracking-[0.28em] uppercase"
-        style={{ color: '#b99663' }}
+        style={{ color: '#B99663' }}
       >
         {meta.num}
       </span>
@@ -35,13 +34,13 @@ export default function ServiceCard({ title }) {
       <div className="flex flex-col gap-2.5">
         <p
           className="font-sora font-light text-[13px] md:text-sm leading-relaxed"
-          style={{ color: '#5c4635', opacity: 0.72 }}
+          style={{ color: '#C8B89E', opacity: 0.72 }}
         >
           {meta.desc}
         </p>
         <h3
           className="font-sora font-semibold text-lg md:text-xl"
-          style={{ color: '#2b2118' }}
+          style={{ color: '#EFE6D8' }}
         >
           {title}
         </h3>
