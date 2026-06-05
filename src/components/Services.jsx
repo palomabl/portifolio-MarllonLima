@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom'
 import ServiceCard from './ServiceCard'
 import SplitText from './SplitText'
+import { serviceSlugByTitle } from '../data/servicesData'
 
 const services = [
   'Pacotes Mensais',
@@ -32,9 +34,13 @@ export default function Services() {
 
         <div className="flex flex-col gap-3 md:flex-row md:gap-5 md:items-stretch">
           {services.map((service) => (
-            <div key={service} className="w-full md:flex-1 min-w-0 cursor-pointer">
+            <Link
+              key={service}
+              to={`/servicos/${serviceSlugByTitle[service]}`}
+              className="w-full md:flex-1 min-w-0 block no-underline"
+            >
               <ServiceCard title={service} />
-            </div>
+            </Link>
           ))}
         </div>
       </div>
